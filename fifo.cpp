@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
 		while(!plik.eof())  
     	{
         	getline(plik,get);
-            text.push( get );
+            text.push(get);
 
 		    cout << "\n[{"<<get<<"}]\n";
         }
