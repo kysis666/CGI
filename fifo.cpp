@@ -7,7 +7,7 @@ int main(int argc, char** argv) {
 	
 	cout << "Content-type: text/html\n\n<title>CGI FIFO</title>";
                
-    queue <string> kolejkaLiczb;
+    queue <string> text;
         string get;
         fstream plik;
 
@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
 		while(!plik.eof())  
     	{
         	getline(plik,get);
-            kolejkaLiczb.push( get );
+            text.push( get );
 
 		    cout << "\n[{"<<get<<"}]\n";
         }
